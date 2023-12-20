@@ -8,6 +8,8 @@ Downgrade `@walletconnect/web3wallet` to `v1.9.1`
 
 When a Node polyfill is used, the newest version of `@walletconnect/web3wallet` throws error `this.events.off is not a function`.
 
+If you edit the [vite.config.ts](vite.config.ts) file of this project and remove the polyfill, the pairing will succeed.
+
 ## Reproduce the issue
 
 Clone and start the sample:
