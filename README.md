@@ -6,7 +6,7 @@ Downgrade `@walletconnect/web3wallet` to `v1.9.1`
 
 ## Root cause of the issue
 
-I did not narrowed it fully but, it is a conflicts with the vite configuration.
+When a Node polyfill is used, the newest version of `@walletconnect/web3wallet` throws error `this.events.off is not a function`.
 
 ## Reproduce the issue
 
